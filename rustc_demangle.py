@@ -1,4 +1,5 @@
 import unicodedata
+import string
 
 class DemangleStyle:
     def __init__(self, type: str, inner: str, elements: int):
