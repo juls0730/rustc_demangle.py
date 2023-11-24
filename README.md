@@ -13,7 +13,7 @@ rustc_demangle.py can also take multiple strings to demangle. Instead, if you wo
 ```PYTHON
 import rustc_demangle
 
-print(rustc_demangle.demangle("_ZN4testE"))
+print(rustc_demangle.demangle("_ZN4testE").get_fn_name(False))
 ```
 
 ## Port Status
