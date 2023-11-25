@@ -154,7 +154,7 @@ def v0_demangle(symbol: str) -> DemanglerType:
     raise Exception
 
 def is_symbol_like(symbol: str) -> bool:
-    return all(c.isalnum() or c in string.punctuation for c in s)
+    return all(c.isalnum() or c in string.punctuation for c in symbol)
 
 def demangle(symbol: str) -> Demangle:
     llvm = ".llvm."
